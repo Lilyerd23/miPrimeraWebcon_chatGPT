@@ -1,0 +1,340 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Color de texto principal */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Encabezado */
+.header {
+    background-color: #87CEEB; /* Azul cielo */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Texto en blanco */
+    border-radius: 10px;
+}
+
+.logo {
+    width: 100px; /* Ancho del logo */
+    height: auto; /* Para mantener la proporción */
+    margin-bottom: 10px; /* Espacio entre el logo y el título */
+    border-radius: 50%; /* Forma circular */
+    border: 2px solid #fff; /* Borde blanco */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Sección principal */
+.main-section {
+    background-color: #f0fff0; /* Verde pastel */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    text-align: center; /* Centrar el contenido */
+    color: #333; /* Color de texto principal */
+}
+
+/* Imagen de la mascota */
+.pet-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block; /* Para centrar la imagen */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sección de Por qué adoptar */
+.why-adopt {
+    text-align: center; /* Centrar contenido horizontalmente */
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #FFDAB9; /* Color de fondo */
+    padding: 20px;
+}
+
+.why-adopt h2 {
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio entre el título y el contenido */
+}
+
+.why-adopt-content {
+    display: flex;
+    align-items: center; /* Alinear elementos verticalmente */
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.why-adopt img {
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Altura automática */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+}
+
+.why-adopt p {
+    color: #555; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 0; /* Eliminar márgenes */
+}
+/* Sección de Nuestro proceso de adopción */
+.adoption-process {
+    background: linear-gradient(45deg, #1a334a, #2976a6, #356e9d); /* Degradado de tres colores */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff; /* Color de texto principal */
+}
+
+/* Pasos a seguir */
+.adoption-process .steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.adoption-process .step {
+    text-align: center;
+    flex: 1;
+}
+
+.adoption-process h2{
+    color: white;
+}
+
+.adoption-process .step i {
+    font-size: 24px; /* Tamaño del icono */
+    color: #7ae5ef;  /* Azul cielo */
+    margin-bottom: 10px; /* Espaciado entre el icono y el título */
+}
+
+.adoption-process .step h3 {
+    color: #8dcaff; /* Azul cielo */
+    font-size: 16px; /* Tamaño del título */
+    margin-top: 5px; /* Espaciado entre el icono y el título */
+    margin-bottom: 5px; /* Espaciado entre el título y el párrafo */
+}
+
+.adoption-process .step p {
+    color: #f6f6f6; /* Color de texto más oscuro */
+    font-size: 14px; /* Tamaño del texto */
+    margin: 0; /* Alinear el texto al centro verticalmente */
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.step {
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s ease; /* Agregar transición */
+}
+
+.step i {
+    font-size: 24px;
+    color: #87CEEB; /* Celeste */
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Agregar transición */
+}
+
+.step h3 {
+    color: #333;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.step p {
+    color: #555;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Efecto de hover para pasos */
+.step:hover {
+    transform: translateY(-5px); /* Levantar ligeramente al pasar el mouse */
+}
+
+.step:hover i {
+    color: #ffffff; /* Cambiar color del icono al pasar el mouse */
+}
+
+/* Testimonios */
+
+.testimonial-carousel {
+    position: relative;
+    max-width: 600px; /* Ancho máximo del carrusel */
+    margin: 0 auto; /* Centrar horizontalmente */
+    overflow: hidden; /* Ocultar desbordamiento */
+}
+
+.testimonials {
+    background-color: #489398; /* Rosa suave */
+    margin-top: 20px;
+    border-radius: 10px;
+    color: #5f5555; /* Color de texto principal */
+    flex: 0 0 auto; /* Hace que los testimonios mantengan su tamaño original */
+    width: 300px; /* Ancho de cada testimonio */
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centra el contenido horizontalmente */
+    display: flex;
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+.testimonial {
+    position: relative; /* Permitir un posicionamiento relativo */
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px;
+    flex: 0 0 auto; /* Hace que los testimonios mantengan su tamaño original */
+    width: 300px; /* Ancho de cada testimonio */
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-right: 10px;
+}
+
+.testimonials p {
+    margin: 0;
+    font-style: italic;
+}
+
+.testimonial img {
+    width: 100px; /* Ancho de la imagen del testimonio */
+    height: 100px; /* Altura de la imagen del testimonio */
+    border-radius: 50%; /* Borde redondeado */
+}
+
+.testimonial:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff;
+}
+
+
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+}
+
+button.prev {
+    left: 0; /* Ajuste izquierda */
+    visibility: visible; /* Hacer visible */
+}
+
+button.next {
+    right: 0; /* Ajuste derecha */
+    visibility: visible; /* Hacer visible */
+}
+
+/* Animación para el movimiento del carrusel */
+@keyframes moveTestimonials {
+    0% {
+        transform: translateX(0); /* Comienza desde la posición inicial */
+    }
+    100% {
+        transform: translateX(-100%); /* Se desplaza hacia la izquierda */
+    }
+}
+
+
+/* Botón de adopción */
+.adoption-link {
+    display: block;
+    width: fit-content;
+    background-color: #5f9ab0; /* Verde */
+    color: #fff; /* Texto en blanco */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px auto; /* Centrar el botón */
+}
+
+.adoption-link:hover {
+    background-color: #117295; /* Verde más oscuro */
+}
+
+
+
+/* Información de contacto y redes sociales */
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: center; /* Centrar los íconos */
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    color: #fff; /* Texto en blanco */
+    font-size: 20px;
+    background-color: #333; /* Color de fondo para los íconos */
+    border-radius: 50%; /* Forma circular */
+    width: 40px; /* Ancho */
+    height: 40px; /* Alto */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Pie de página */
+/* Pie de página */
+.footer {
+    background-color: #F0E68C; /* Amarillo claro */
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+    color: #333; /* Texto en color principal */
+}
+
